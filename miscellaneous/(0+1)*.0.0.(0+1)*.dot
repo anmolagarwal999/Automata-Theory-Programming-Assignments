@@ -1,0 +1,32 @@
+digraph {
+	rankdir=LR size="8,5"
+	node [shape=doublecircle]
+	Q20
+	node [shape=circle]
+	Q1 -> Q2 [label=0]
+	Q3 -> Q4 [label=1]
+	Q5 -> Q1 [label="$"]
+	Q5 -> Q3 [label="$"]
+	Q2 -> Q6 [label="$"]
+	Q4 -> Q6 [label="$"]
+	Q7 -> Q5 [label="$"]
+	Q6 -> Q5 [label="$"]
+	Q7 -> Q8 [label="$"]
+	Q6 -> Q8 [label="$"]
+	Q9 -> Q10 [label=0]
+	Q8 -> Q9 [label="$"]
+	Q11 -> Q12 [label=0]
+	Q10 -> Q11 [label="$"]
+	Q13 -> Q14 [label=0]
+	Q15 -> Q16 [label=1]
+	Q17 -> Q13 [label="$"]
+	Q17 -> Q15 [label="$"]
+	Q14 -> Q18 [label="$"]
+	Q16 -> Q18 [label="$"]
+	Q19 -> Q17 [label="$"]
+	Q18 -> Q17 [label="$"]
+	Q19 -> Q20 [label="$"]
+	Q18 -> Q20 [label="$"]
+	Q12 -> Q19 [label="$"]
+	label="(0+1)*00(0+1)*"
+}
